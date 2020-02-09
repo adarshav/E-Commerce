@@ -10,3 +10,7 @@ function App() {
 }
 
 export default App;
+
+/*
+  while using react router dom first we have to install the package[npm install react-router-dom]
+ */
