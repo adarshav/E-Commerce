@@ -27,4 +27,5 @@ export default App;
 
 /*
   while using react router dom first we have to install the package[npm install react-router-dom]
+  react-router component has three properties history, match, location and these 3 can b accessed using withRouter function
  */

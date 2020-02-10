@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 
 const HomePage = (props) => {
+  console.log(props);
   return(
     <div>
       <h1>This is HomePage</h1>
@@ -14,7 +15,7 @@ const HomePage = (props) => {
 }
 
 const TopicsPage = (props) => {
-  console.log(props);
+  // console.log(props);
   return(
     <div>
       <h1>This is TopicsPage</h1>      
