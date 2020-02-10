@@ -16,7 +16,7 @@ function App() {
       {/* <HomePage /> */}
       <Switch>
         <Route exact path = '/' component = {HomePage}/>
-        <Route  path = '/hats' component = {HatsPage}/>
+        {/* <Route  path = '/hats' component = {HatsPage}/> */}
       </Switch>
       {/* switch executes only one and not more */}
     </div>
