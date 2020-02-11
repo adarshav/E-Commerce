@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
 const MenuItem = ({title, imageUrl, size, history, linkUrl, match }) => (
     <div  className = {`${size} menu-item `}
     onClick  = {() => history.push(`${match.url}${linkUrl}`)} >
-        {/* for routes props history match location visit react-router-learning
+        {/* for routes props history match location visit react-router-learning.
         Here match.url provides '/' at homepage and linkUrl is appended to it*/}
         <div className = 'background-image' 
         style = {{
