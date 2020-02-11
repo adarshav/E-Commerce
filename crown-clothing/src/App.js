@@ -1,14 +1,18 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './pages/homepage.component.js/homepage.component';
+import ShopPage from './pages/shop/shop.component';
 
-const HatsPage = props => {
-  console.log(props);
-  return(
-  <div>
-    <h1>This is Hats Page {props.location.pathname}</h1>
-  </div>
-)}
+// used for demonstraation purpose
+
+// const HatsPage = props => {
+//   console.log(props);
+//   return(
+//   <div>
+//     <h1>This is Hats Page {props.location.pathname}</h1>
+//   </div>
+// )}
+
 
 function App() {
   return (
@@ -17,6 +21,7 @@ function App() {
       <Switch>
         <Route exact path = '/' component = {HomePage}/>
         {/* <Route  path = '/hats' component = {HatsPage}/> */}
+        <Route  path = '/shop' component = {ShopPage}/>
       </Switch>
       {/* switch executes only one and not more */}
     </div>
