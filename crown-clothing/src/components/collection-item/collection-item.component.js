@@ -1,4 +1,4 @@
-//it is as same as menu item don ein previous
+//it is as same as menu item done in previous
 import React from 'react';
 
 import './collection-item.styles.scss';
