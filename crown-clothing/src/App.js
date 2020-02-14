@@ -5,6 +5,7 @@ import './App.css';
 import Header from './header/header.component';
 import HomePage from './pages/homepage.component.js/homepage.component';
 import ShopPage from './pages/shop/shop.component';
+import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
 // used for demonstraation purpose
 
@@ -26,6 +27,7 @@ function App() {
         <Route exact path = '/' component = {HomePage}/>
         {/* <Route  path = '/hats' component = {HatsPage}/> */}
         <Route  path = '/shop' component = {ShopPage}/>
+        <Route  path = '/signin' component = {SignInAndSignUp}/>
       </Switch>
       {/* switch executes only one and not more */}
     </div>
