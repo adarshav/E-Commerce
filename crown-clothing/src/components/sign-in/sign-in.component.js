@@ -2,6 +2,7 @@ import React from 'react';
 
 import './sign-in.styles.scss';
 import FormInput from './../form-input/form-input.component';
+import CustomButton from '../custom-button/custom-button.component';
 
 //class component because what the user entriesis not known [changes]
 class SignIn extends React.Component {
@@ -52,7 +53,11 @@ class SignIn extends React.Component {
 
                     {/* <label>Password</label> */}
 
-                    <input type = 'submit' value = 'Submit form' />
+                    <CustomButton type = 'submit' >
+                        Sign in
+                        {/* Here SignIn is children of customButton */}
+                    </CustomButton>
+                    
                 </form>
             </div>
 
