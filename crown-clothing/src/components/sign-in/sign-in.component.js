@@ -3,8 +3,10 @@ import React from 'react';
 import './sign-in.styles.scss';
 import FormInput from './../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 
-//class component because what the user entriesis not known [changes]
+
+//class component because what the user entries is not known [changes]
 class SignIn extends React.Component {
     constructor(props) {
         super(props);
@@ -52,11 +54,17 @@ class SignIn extends React.Component {
                     required/>
 
                     {/* <label>Password</label> */}
+                    <div className = 'buttons'>
+                        <CustomButton type = 'submit' >
+                            Sign in
+                            {/* Here SignIn is children of customButton */}
+                        </CustomButton>
 
-                    <CustomButton type = 'submit' >
-                        Sign in
-                        {/* Here SignIn is children of customButton */}
-                    </CustomButton>
+                        <CustomButton onClick = {signInWithGoogle} isGoogleSignIn>
+                            Sign in With Google
+                        </CustomButton>
+                    </div>
+                    
                     
                 </form>
             </div>
