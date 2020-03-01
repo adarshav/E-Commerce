@@ -105,3 +105,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
  */
 
 //  After implementing redux to the application, Here there is a problem 1.if user signs in the user will be still in sign-in page which may cause an error so that if the user logs in he should be redirected to shop page. That will be seen now, If we want to make the mentioned we should have an access to the currentUser which is in rootReducer that objective can be achieved by mapStateToProps so that we have the access of currentUser who have logged in.
+
+// CartIcon has been implemented with dropdown 
+
+// After CartIcon has been done now we have to make the items to add to the cart which are in the collections lets make it 

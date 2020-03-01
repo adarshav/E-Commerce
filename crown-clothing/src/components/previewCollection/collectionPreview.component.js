@@ -11,9 +11,11 @@ const CollectionPreview = ({title, items}) => (
         <div className = 'preview'>
             {
                 items.filter((item, index) => index < 4) //this is to display only four from the collection
-                    .map(({id, ...otherItemProps})=> (
-                    <CollectionItem key = {id} {...otherItemProps} />
+                    .map(item=> (
+                    <CollectionItem key = {item.id}  item = {item} />
                 ))
+                // now we have to make some changes in code so that products can be added to cart
+
             }
         </div>
     </div>
