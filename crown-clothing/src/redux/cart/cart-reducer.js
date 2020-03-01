@@ -18,7 +18,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 cartItems: addItemToCart(state.cartItems, action.payload)
-                // if the condition matches in the above case of adding items to cart it returns an object as mentioned before it returns whole state and cartItems which is an array, Here In cartItems old items should be added with the new items hence the [state.cartItems, action.payload]
+                //  cartItems: [state.cartItems, action.payload]// if the condition matches in the above case of adding items to cart it returns an object as mentioned before it returns whole state and cartItems which is an array, Here In cartItems old items should be added with the new items hence the [state.cartItems, action.payload]
             }
         default:    
             return state;
