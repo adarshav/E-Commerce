@@ -7,7 +7,10 @@ import Header from './header/header.component';
 import HomePage from './pages/homepage.component.js/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+
 import { auth, userProfileDocument } from './firebase/firebase.utils';
+
+import CheckoutPage from './pages/checkout/checkout.component';
 //get the currentUser from the userActions
 import { setCurrentUser } from './redux/user/user.actions';
 // App.js will be changed to class component because the state of the users should be available to all the components
@@ -81,6 +84,7 @@ class App extends React.Component  {
           {/* <Route exact path = '/signin' component = {SignInAndSignUp}/> */}
           {/* instead of component in Route use render which is a function  */}
           <Route exact path = '/signin' render = {() => this.props.currentUser ? (<Redirect to = '/' />) :               ( <SignInAndSignUp />) }/>
+          <Route exact path = '/checkout' component = { CheckoutPage} />
         </Switch>
         {/* switch executes only one and not more */}
       </div>
